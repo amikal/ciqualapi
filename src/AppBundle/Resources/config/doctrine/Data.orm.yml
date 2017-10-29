@@ -1,0 +1,469 @@
+AppBundle\Entity\Data:
+    type: entity
+    table: data
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        origgpcd:
+            type: string
+            nullable: true
+            length: 255
+            options:
+                fixed: false
+            column: ORIGGPCD
+        origgpfr:
+            type: string
+            nullable: true
+            length: 255
+            options:
+                fixed: false
+            column: ORIGGPFR
+        origfdcd:
+            type: string
+            nullable: true
+            length: 255
+            options:
+                fixed: false
+            column: ORIGFDCD
+        origfdnm:
+            type: string
+            nullable: true
+            length: 255
+            options:
+                fixed: false
+            column: ORIGFDNM
+        'energie,RèglementUeN°1169/2011(kj/100g)':
+            type: string
+            nullable: true
+            length: 255
+            options:
+                fixed: false
+            column: 'Energie, Règlement UE N° 1169/2011 (kJ/100g)'
+        'energie,RèglementUeN°1169/2011(kcal/100g)':
+            type: string
+            nullable: true
+            length: 255
+            options:
+                fixed: false
+            column: 'Energie, Règlement UE N° 1169/2011 (kcal/100g)'
+        'energie,NXFacteurJones,AvecFibres(kj/100g)':
+            type: string
+            nullable: true
+            length: 255
+            options:
+                fixed: false
+            column: 'Energie, N x facteur Jones, avec fibres  (kJ/100g)'
+        'energie,NXFacteurJones,AvecFibres(kcal/100g)':
+            type: string
+            nullable: true
+            length: 255
+            options:
+                fixed: false
+            column: 'Energie, N x facteur Jones, avec fibres  (kcal/100g)'
+        eau(g/100g):
+            type: string
+            nullable: true
+            length: 255
+            options:
+                fixed: false
+            column: 'Eau (g/100g)'
+        protéines(g/100g):
+            type: string
+            nullable: true
+            length: 255
+            options:
+                fixed: false
+            column: 'Protéines (g/100g)'
+        'protéinesBrutes,NX6.25(g/100g)':
+            type: string
+            nullable: true
+            length: 255
+            options:
+                fixed: false
+            column: 'Protéines brutes, N x 6.25 (g/100g)'
+        glucides(g/100g):
+            type: string
+            nullable: true
+            length: 255
+            options:
+                fixed: false
+            column: 'Glucides (g/100g)'
+        lipides(g/100g):
+            type: string
+            nullable: true
+            length: 16
+            options:
+                fixed: false
+            column: 'Lipides (g/100g)'
+        sucres(g/100g):
+            type: string
+            nullable: true
+            length: 16
+            options:
+                fixed: false
+            column: 'Sucres (g/100g)'
+        amidon(g/100g):
+            type: string
+            nullable: true
+            length: 16
+            options:
+                fixed: false
+            column: 'Amidon (g/100g)'
+        fibresAlimentaires(g/100g):
+            type: string
+            nullable: true
+            length: 16
+            options:
+                fixed: false
+            column: 'Fibres alimentaires (g/100g)'
+        polyolsTotaux(g/100g):
+            type: string
+            nullable: true
+            length: 4
+            options:
+                fixed: false
+            column: 'Polyols totaux (g/100g)'
+        cendres(g/100g):
+            type: string
+            nullable: true
+            length: 16
+            options:
+                fixed: false
+            column: 'Cendres (g/100g)'
+        alcool(g/100g):
+            type: string
+            nullable: true
+            length: 4
+            options:
+                fixed: false
+            column: 'Alcool (g/100g)'
+        acidesOrganiques(g/100g):
+            type: string
+            nullable: true
+            length: 4
+            options:
+                fixed: false
+            column: 'Acides organiques (g/100g)'
+        agSaturés(g/100g):
+            type: string
+            nullable: true
+            length: 20
+            options:
+                fixed: false
+            column: 'AG saturés (g/100g)'
+        agMonoinsaturés(g/100g):
+            type: string
+            nullable: true
+            length: 24
+            options:
+                fixed: false
+            column: 'AG monoinsaturés (g/100g)'
+        agPolyinsaturés(g/100g):
+            type: string
+            nullable: true
+            length: 20
+            options:
+                fixed: false
+            column: 'AG polyinsaturés (g/100g)'
+        'ag4:0,Butyrique(g/100g)':
+            type: string
+            nullable: true
+            length: 4
+            options:
+                fixed: false
+            column: 'AG 4:0, butyrique (g/100g)'
+        'ag6:0,Caproïque(g/100g)':
+            type: string
+            nullable: true
+            length: 4
+            options:
+                fixed: false
+            column: 'AG 6:0, caproïque (g/100g)'
+        'ag8:0,Caprylique(g/100g)':
+            type: string
+            nullable: true
+            length: 4
+            options:
+                fixed: false
+            column: 'AG 8:0, caprylique (g/100g)'
+        'ag10:0,Caprique(g/100g)':
+            type: string
+            nullable: true
+            length: 4
+            options:
+                fixed: false
+            column: 'AG 10:0, caprique (g/100g)'
+        'ag12:0,Laurique(g/100g)':
+            type: string
+            nullable: true
+            length: 28
+            options:
+                fixed: false
+            column: 'AG 12:0, laurique (g/100g)'
+        'ag14:0,Myristique(g/100g)':
+            type: string
+            nullable: true
+            length: 24
+            options:
+                fixed: false
+            column: 'AG 14:0, myristique (g/100g)'
+        'ag16:0,Palmitique(g/100g)':
+            type: string
+            nullable: true
+            length: 24
+            options:
+                fixed: false
+            column: 'AG 16:0, palmitique (g/100g)'
+        'ag18:0,Stéarique(g/100g)':
+            type: string
+            nullable: true
+            length: 24
+            options:
+                fixed: false
+            column: 'AG 18:0, stéarique (g/100g)'
+        'ag18:19c(n9),Oléique(g/100g)':
+            type: string
+            nullable: true
+            length: 20
+            options:
+                fixed: false
+            column: 'AG 18:1 9c (n-9), oléique (g/100g)'
+        'ag18:29c,12c(n6),Linoléique(g/100g)':
+            type: string
+            nullable: true
+            length: 20
+            options:
+                fixed: false
+            column: 'AG 18:2 9c,12c (n-6), linoléique (g/100g)'
+        'ag18:3C9,c12,c15(n3),AlphaLinolénique(g/100g)':
+            type: string
+            nullable: true
+            length: 20
+            options:
+                fixed: false
+            column: 'AG 18:3 c9,c12,c15 (n-3), alpha-linolénique (g/100g)'
+        'ag20:45c,8c,11c,14c(n6),Arachidonique(g/100g)':
+            type: string
+            nullable: true
+            length: 24
+            options:
+                fixed: false
+            column: 'AG 20:4 5c,8c,11c,14c (n-6), arachidonique (g/100g)'
+        'ag20:55c,8c,11c,14c,17c(n3)Epa(g/100g)':
+            type: string
+            nullable: true
+            length: 4
+            options:
+                fixed: false
+            column: 'AG 20:5 5c,8c,11c,14c,17c (n-3) EPA (g/100g)'
+        'ag22:64c,7c,10c,13c,16c,19c(n3)Dha(g/100g)':
+            type: string
+            nullable: true
+            length: 4
+            options:
+                fixed: false
+            column: 'AG 22:6 4c,7c,10c,13c,16c,19c (n-3) DHA (g/100g)'
+        cholestérol(mg/100g):
+            type: string
+            nullable: true
+            length: 4
+            options:
+                fixed: false
+            column: 'Cholestérol (mg/100g)'
+        selChlorureDeSodium(g/100g):
+            type: string
+            nullable: true
+            length: 24
+            options:
+                fixed: false
+            column: 'Sel chlorure de sodium (g/100g)'
+        calcium(mg/100g):
+            type: string
+            nullable: true
+            length: 16
+            options:
+                fixed: false
+            column: 'Calcium (mg/100g)'
+        chlorure(mg/100g):
+            type: string
+            nullable: true
+            length: 8
+            options:
+                fixed: false
+            column: 'Chlorure (mg/100g)'
+        cuivre(mg/100g):
+            type: string
+            nullable: true
+            length: 24
+            options:
+                fixed: false
+            column: 'Cuivre (mg/100g)'
+        fer(mg/100g):
+            type: string
+            nullable: true
+            length: 16
+            options:
+                fixed: false
+            column: 'Fer (mg/100g)'
+        iode(µg/100g):
+            type: string
+            nullable: true
+            length: 16
+            options:
+                fixed: false
+            column: 'Iode (µg/100g)'
+        magnésium(mg/100g):
+            type: string
+            nullable: true
+            length: 16
+            options:
+                fixed: false
+            column: 'Magnésium (mg/100g)'
+        manganèse(mg/100g):
+            type: string
+            nullable: true
+            length: 16
+            options:
+                fixed: false
+            column: 'Manganèse (mg/100g)'
+        phosphore(mg/100g):
+            type: string
+            nullable: true
+            length: 16
+            options:
+                fixed: false
+            column: 'Phosphore (mg/100g)'
+        potassium(mg/100g):
+            type: string
+            nullable: true
+            length: 16
+            options:
+                fixed: false
+            column: 'Potassium (mg/100g)'
+        sélénium(µg/100g):
+            type: string
+            nullable: true
+            length: 16
+            options:
+                fixed: false
+            column: 'Sélénium (µg/100g)'
+        sodium(mg/100g):
+            type: string
+            nullable: true
+            length: 24
+            options:
+                fixed: false
+            column: 'Sodium (mg/100g)'
+        zinc(mg/100g):
+            type: string
+            nullable: true
+            length: 16
+            options:
+                fixed: false
+            column: 'Zinc (mg/100g)'
+        rétinol(µg/100g):
+            type: string
+            nullable: true
+            length: 4
+            options:
+                fixed: false
+            column: 'Rétinol (µg/100g)'
+        betaCarotène(µg/100g):
+            type: string
+            nullable: true
+            length: 4
+            options:
+                fixed: false
+            column: 'Beta-Carotène (µg/100g)'
+        vitamineD(µg/100g):
+            type: string
+            nullable: true
+            length: 4
+            options:
+                fixed: false
+            column: 'Vitamine D (µg/100g)'
+        vitamineE(mg/100g):
+            type: string
+            nullable: true
+            length: 16
+            options:
+                fixed: false
+            column: 'Vitamine E (mg/100g)'
+        vitamineK1(µg/100g):
+            type: string
+            nullable: true
+            length: 12
+            options:
+                fixed: false
+            column: 'Vitamine K1 (µg/100g)'
+        vitamineK2(µg/100g):
+            type: string
+            nullable: true
+            length: 4
+            options:
+                fixed: false
+            column: 'Vitamine K2 (µg/100g)'
+        vitamineC(mg/100g):
+            type: string
+            nullable: true
+            length: 20
+            options:
+                fixed: false
+            column: 'Vitamine C (mg/100g)'
+        vitamineB1OuThiamine(mg/100g):
+            type: string
+            nullable: true
+            length: 24
+            options:
+                fixed: false
+            column: 'Vitamine B1 ou Thiamine (mg/100g)'
+        vitamineB2OuRiboflavine(mg/100g):
+            type: string
+            nullable: true
+            length: 20
+            options:
+                fixed: false
+            column: 'Vitamine B2 ou Riboflavine (mg/100g)'
+        vitamineB3OuPpOuNiacine(mg/100g):
+            type: string
+            nullable: true
+            length: 16
+            options:
+                fixed: false
+            column: 'Vitamine B3 ou PP ou Niacine (mg/100g)'
+        vitamineB5OuAcidePantothénique(mg/100g):
+            type: string
+            nullable: true
+            length: 16
+            options:
+                fixed: false
+            column: 'Vitamine B5 ou Acide pantothénique (mg/100g)'
+        vitamineB6(mg/100g):
+            type: string
+            nullable: true
+            length: 20
+            options:
+                fixed: false
+            column: 'Vitamine B6 (mg/100g)'
+        vitamineB9OuFolatesTotaux(µg/100g):
+            type: string
+            nullable: true
+            length: 16
+            options:
+                fixed: false
+            column: 'Vitamine B9 ou Folates totaux (µg/100g)'
+        vitamineB12(µg/100g):
+            type: string
+            nullable: true
+            length: 4
+            options:
+                fixed: false
+            column: 'Vitamine B12 (µg/100g)'
+    lifecycleCallbacks: {  }
