@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Ciqual
  *
- * @ApiResource(attributes={"filters"={"ciqual.search_filter"}})
+ * @ApiResource(attributes={"filters"={"ciqual.search_filter"},"pagination_items_per_page"=5})
  * @ORM\Table(name="ciqual")
  * @ORM\Entity
  */
